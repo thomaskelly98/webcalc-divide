@@ -1,0 +1,13 @@
+image: golang:latest
+
+before_script:
+  - go version
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - cd src
+    - go test
